@@ -1,6 +1,5 @@
-import { defineConfig } from 'vite';
-import { sassPlugin } from 'vite-plugin-sass';
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [sassPlugin()],
-});
+    base: '/wb-marketplace/',
+})
