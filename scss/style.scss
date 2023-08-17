@@ -1,0 +1,48 @@
+/*--global--*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*--blocks--*/
+
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/page.scss";
+@import "./blocks/basket.scss";
+@import "./blocks/product.scss";
+@import "./blocks/checkbox-control.scss";
+@import "./blocks/change-product.scss";
+@import "./blocks/delivery.scss";
+@import "./blocks/change-button.scss";
+@import "./blocks/storage-point.scss";
+@import "./blocks/price-delivery.scss";
+@import "./blocks/dates-products.scss";
+@import "./blocks/info-return.scss";
+@import "./fonts.scss";
+@import "./blocks/products-list.scss";
+@import "./blocks/payment.scss";
+@import "./blocks/card-info.scss";
+@import "./blocks/client-info.scss";
+@import "./blocks/total.scss";
+@import "./blocks/pay-now.scss";
+@import "./blocks/submit.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/mobile-nav.scss";
+@import "./blocks/main.scss";
+@import "./blocks/goods-point.scss";
+@import "./blocks/card-payment.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/tooltip.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/modal-delivery.scss";
+@import "./blocks/table.scss";

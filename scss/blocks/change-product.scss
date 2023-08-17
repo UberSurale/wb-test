@@ -1,0 +1,108 @@
+.change-product {
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 2;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        flex-direction: column;
+        grid-row: 1;
+        grid-column: 3;
+        align-items: flex-end;
+    }
+
+    @media (min-width: 1024px) {
+        justify-content: initial;
+        gap: 7px;
+    }
+}
+
+.change-product__products-left {
+    color: #FF3B30;
+    font-size: 13px;
+    line-height: 1.23;
+}
+
+.change-product__button {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 4px;
+    width: 24px;
+    height: 32px;
+    cursor: pointer;
+
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.2px;
+
+    @media (min-width: 1024px) {
+        width: 28px;
+        height: 44px;
+    }
+}
+
+.change-product__favorite-wrapper {
+    display: flex;
+    gap: 4px;
+
+    &--not-available {
+        justify-content: flex-end;
+        grid-column: 3;
+    }
+
+    @media (min-width: 1024px) {
+        gap: 15px;
+    }
+}
+
+.change-product__favorite-button,
+.change-product__delete-button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 20px;
+
+    @media (min-width: 1024px) {
+        margin-right: 0;
+    }
+}
+
+.change-product__favorite-button:hover .change-product__icon {
+    fill: #FF3B30;
+}
+
+.change-product__delete-button:hover .change-product__icon {
+    fill: #FF3B30;
+}
+
+.change-product__icon {
+    top: 0;
+    left: 0;
+    position: absolute;
+    fill: #000000;
+}
+
+.change-product__add-button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.change-product__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    line-height: 1.42;
+
+    @media (min-width: 1024px) {
+        width: 45px;
+        height: 44px;
+    }
+}

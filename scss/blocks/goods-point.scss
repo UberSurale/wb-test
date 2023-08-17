@@ -1,0 +1,54 @@
+.goods-point {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+        margin-bottom: 12px;
+    }
+}
+
+.goods-point__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goods-point__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 6px;
+
+    @media (min-width: 1024px) {
+        margin-bottom: 2px;
+    }
+}
+
+.goods-point__description {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.23;
+    margin-bottom: 4px;
+
+    @media (min-width: 1024px) {
+        margin-bottom: 0;
+    }
+}
+
+.goods-point__link {
+    color: #CB11AB;
+    font-size: 13px;
+    line-height: 1.23;
+    text-decoration: underline dashed;
+}
+
+.goods-point__button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url("../../images/change-button.svg");
+    background-repeat: no-repeat;
+    align-self: center;
+    cursor: pointer;
+}

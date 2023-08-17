@@ -1,0 +1,49 @@
+.pay-now {
+    font-size: 13px;
+    line-height: 1.23;
+    padding: 8px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    background-color: #F0ECF4;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.pay-now__label {
+    padding-left: 30px;
+}
+
+.pay-now__description {
+    margin: 0;
+    margin-top: 11px;
+}
+
+.pay-now__control {
+    position: relative;
+}
+
+.pay-now__mark {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 50%;
+    transform: translateY(-47%);
+    border: 1px solid #00000033;
+    border-radius: 7px;
+}
+
+.pay-now__input[type="checkbox"]:checked + .pay-now__mark::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../images/check.svg");
+    width: 13px;
+    height: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+
+.pay-now__input[type="checkbox"]:checked + .pay-now__mark {
+    background-color: #CB11AB;
+}

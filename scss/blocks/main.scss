@@ -1,0 +1,11 @@
+.main__form {
+    @media (min-width: 1024px) {
+        display: grid;
+        width: 95%;
+        max-width: 1500px;
+        margin: 0 auto;
+        grid-template-columns: 3fr 31%;
+        column-gap: 32px;
+        padding-bottom: 5px;
+    }
+}

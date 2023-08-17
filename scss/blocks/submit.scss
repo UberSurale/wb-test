@@ -1,0 +1,67 @@
+.submit {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit__button {
+    color: #ffffff;
+    font-family: inherit;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    background-color: #CB11AB;
+    border: none;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+        opacity: 0.7;
+    }
+}
+
+.submit__control {
+    position: relative;
+    padding-left: 21px;
+}
+
+.submit__mark {
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 24px;
+    left: 0;
+    top: 0;
+}
+
+.submit__input[type="checkbox"]:checked + .submit__mark::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 11px;
+    background-image: url("../../images/agree-icon.svg");
+    top: 2px;
+}
+
+.submit__label {
+    font-size: 13px;
+    line-height: 1.23;
+    text-align: left;
+    display: inline-block;
+
+    a {
+        pointer-events: none;
+    }
+}
+
+.submit__link {
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.10);
+    color: #000000;
+    line-height: inherit;
+}

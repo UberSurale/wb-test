@@ -1,0 +1,56 @@
+.storage-point {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 78px;
+    }
+}
+
+.storage-point__title,
+.storage-point__description {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.storage-point__description {
+    font-weight: 400;
+}
+
+.storage-point__rating,
+.storage-point__work-time {
+    font-size: 13px;
+    line-height: 1.23;
+}
+
+.storage-point__rating {
+    padding-left: 16px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-image: url("../../images/start-icon.svg");
+        background-repeat: no-repeat;
+        left: 0;
+        top: 50%;
+        transform: translateY(-65%);
+    }
+}
+
+.storage-point__work-time {
+    padding-left: 8px;
+}
+
+.storage-point__info-wrapper {
+    margin-bottom: 16px;
+
+    @media (min-width: 1024px) {
+        margin-bottom: 13px;
+    }
+}

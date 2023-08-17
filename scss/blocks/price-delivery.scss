@@ -1,0 +1,22 @@
+.price-delivery {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 25px;
+    }
+}
+
+.price-delivery__title,
+.price-delivery__description {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+.price-delivery__description {
+    font-weight: 400;
+}

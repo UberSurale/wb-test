@@ -1,0 +1,33 @@
+.card-payment {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.card-payment__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.card-payment__button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url(../../images/change-button.svg);
+    background-repeat: no-repeat;
+    align-self: center;
+    cursor: pointer;
+}
+
+.card-payment__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-payment__card-info {
+    margin-bottom: 12px;
+}

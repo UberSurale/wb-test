@@ -1,0 +1,27 @@
+.products-list {
+    display: flex;
+    gap: 8px;
+}
+
+.products-list__item {
+    position: relative;
+}
+
+.products-list__image {
+    border-radius: 8px;
+}
+
+.products-list__count {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #ffffff;
+    padding: 0px 6px 0px 6px;
+    background-color: #F55123;
+    border-radius: 16px;
+    top: -6px;
+    right: -3px;
+}

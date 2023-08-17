@@ -1,0 +1,19 @@
+.card-info {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.card-info__card-number {
+    margin: 0;
+}
+
+.card-info__expiration-date {
+    margin-left: 12px;
+}
+
+.card-info__icon {
+    display: block;
+    margin-right: 8px;
+}

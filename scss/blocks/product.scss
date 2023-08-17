@@ -1,0 +1,231 @@
+.product {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    padding-top: 12px;
+    padding-bottom: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
+
+    @media (min-width: 768px) {
+        grid-template-columns: auto 40% 1fr 20%;
+        grid-template-rows: auto;
+        border: none;
+        row-gap: 12px;
+        padding: 0;
+    }
+
+    &--not-available {
+        .product__image-wrapper {
+            padding-left: 0;
+        }
+
+        @media (min-width: 1024px) {
+            &:not(:last-child) {
+                margin-bottom: 23px;
+            }
+        }
+    }
+}
+
+.product__image {
+    display: block;
+    background-color: transparent;
+    border-radius: 8px;
+
+    @media (max-width: 500px) {
+        margin-right: 16px;
+    }
+
+    &--not-available {
+        filter: grayscale(100%);
+    }
+}
+
+.product__field-group {
+    margin: 0;
+}
+
+.product-input {
+    position: relative;
+}
+
+.product-input__mark {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    left: 4px;
+    top: 4px;
+
+    @media (min-width: 1024px) {
+        left: -35px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.product-input__check[type="checkbox"]:checked + .product-input__mark::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../images/check.svg");
+    width: 13px;
+    height: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+
+.product-input__check[type="checkbox"]:checked + .product-input__mark {
+    background-color: #CB11AB;
+}
+
+.product-input__count {
+    display: block;
+    position: absolute;
+    padding: 1px 3px 1px 3px;
+    background-color: #CB11AB;
+    border-radius: 6px;
+    left: 4px;
+    bottom: 4px;
+
+    background-color: #ffffff;
+
+    font-size: 14px;
+    line-height: 1.42;
+    font-weight: 400;
+}
+
+.product__price {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 2px;
+    font-weight: 700;
+    line-height: 1.5;
+
+    &--shown {
+        display: none;
+    }
+    
+    @media (min-width: 768px) {
+        display: none;
+
+        &--shown {
+            display: block;
+            grid-column: 4;
+        }
+    }
+}
+
+.product__total-wrapper {
+    text-align: right;
+
+    .product__price--old {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+.product__price--old {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.23;
+    color: #A0A0A4;
+    text-decoration: line-through;
+    width: 100%;
+}
+
+.product__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 1;
+    height: 121px;
+
+    &--not-available {
+        color: #A0A0A4;
+    }
+    
+    @media (min-width: 768px) {
+        grid-column: 2;
+        grid-row: 1;
+        height: initial;
+    }
+}
+
+.product__image-wrapper {
+    @media (min-width: 768px) {
+        margin-right: 16px;
+    }
+
+    @media (min-width: 1024px) {
+        padding-left: 34px;
+    }
+}
+
+.product__description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.42;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+
+    @media (min-width: 1024px) {
+        font-size: 16px;
+        white-space: wrap;
+        width: 100%;
+    }
+}
+
+.product__characteristics,
+.product__store,
+.product__company {
+    font-size: 13px;
+    line-height: 1.23;
+}
+
+.product__store,
+.product__company {
+    color: #A0A0A4;
+}
+
+.product__company {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: inline;
+        margin-top: 4px;
+    }
+}
+
+.product__characteristics-wrapper {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product__color-size {
+    .product__characteristics--size {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 8px;
+    }
+}
+
+.product__store {
+    margin-top: 10px;
+}

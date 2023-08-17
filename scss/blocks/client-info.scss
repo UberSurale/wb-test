@@ -1,0 +1,112 @@
+.client-info {
+    border-radius: 16px;
+    background-color: #ffffff;
+    margin-bottom: 12px;
+
+    @media (min-width: 1024px) {
+        grid-column: 1;
+    }
+}
+
+.client-info__title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.2px;
+    margin-bottom: 8px;
+
+    @media (min-width: 1024px) {
+        margin-bottom: 17px;
+        font-size: 24px;
+    }
+}
+
+.client-info__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 590px;
+    gap: 14px;
+
+    @media (min-width: 768px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 10px;
+    }
+}
+
+.client-info__wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 29px;
+
+    @media (min-width: 1024px) {
+        padding-top: 20px;
+        width: 93%;
+    }
+}
+
+.client-info__label {
+    font-family: "Segoi UI", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #A0A0A4;
+    position: relative;
+    flex-grow: 1;
+    padding-top: 13px;
+    padding-bottom: 16px;
+}
+
+.client-info__input {
+    padding-bottom: 6px;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+    &--phone {
+        &::placeholder {
+            color: #000;
+        }
+    }
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+.client-info__input.error {
+    color: #F55123;
+    border-bottom: 1px solid #F55123;
+}
+
+.client-info__label-warning {
+    color: #000;
+    font-size: 12px;
+    line-height: 1.16;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.client-info__label-phone {
+    position: absolute;
+    color: #A0A0A4;
+    font-size: 12px;
+    line-height: 1.16;
+    top: 0;
+}
+
+.client-info__error {
+    color: #F55123;
+    font-size: 12px;
+    line-height: 1.16;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}

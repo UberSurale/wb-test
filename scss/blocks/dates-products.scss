@@ -1,0 +1,34 @@
+.dates-products__item {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 82px;
+    }
+}
+
+.dates-products__list,
+.dates-products__product-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dates-products__list {
+    margin-bottom: 24px;
+
+    @media (min-width: 1024px) {
+        &:not(:last-child) {
+            margin-bottom: 17px;
+        }
+    }
+}
+
+.dates-products__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
